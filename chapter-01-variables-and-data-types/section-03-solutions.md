@@ -155,5 +155,3 @@ After completing the exercises, you should be able to:
 5. Work with constants
 6. Debug type-related issues
 7. Understand type coercion rules
-
-Would you like additional exercises or clarification on any of these concepts?

@@ -4,6 +4,7 @@ To improve the coding speed without having to look too much the docs or IA, ther
 
 ## Local site:
 https://codingfluidity.test
+https://codingfluidity.test/solutions.php (links to the solutions in PHP and node.js commands for execution)
 
 ## 1. Variables & Data Types (Foundation)
 - Variable declaration and initialization

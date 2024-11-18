@@ -8,3 +8,6 @@ let age = 23;
 let name = "John Wick";
 let isStudent = false;
 let height = 1.72;
+
+// Template strings/literals
+console.log(`${name} is ${age} years old, ${height} meters tall, and is ${isStudent === false ? "not" : ""} a student`);
