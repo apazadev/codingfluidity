@@ -6,6 +6,12 @@ To improve the coding speed without having to look too much the docs or IA, ther
 https://codingfluidity.test
 https://codingfluidity.test/solutions.php (links to the solutions in PHP and node.js commands for execution)
 
+## Mnemonic associations
+- JavaScript, Animal: Chameleon (kemilien)
+  - Represents its adaptability and ability to "fit" everywhere (browser, server, mobile).
+- PHP, Animal: Elephant (elifant)
+  - Based on the PHP mascot, the "elePHPant."
+
 ## 1. Variables & Data Types (Foundation)
 - Variable declaration and initialization
 - Basic data types (string, number, boolean)

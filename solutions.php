@@ -8,6 +8,12 @@ $solutions = [
 	"chapter-01-variables-and-data-types/solutions/topic-05-variable-references",
 	"chapter-01-variables-and-data-types/solutions/topic-06-constants-vs-variables",
 	"chapter-01-variables-and-data-types/solutions/topic-07-type-checking-function",
+	"chapter-02-string-operations/solutions/exercise-01-string-reversal",
+	"chapter-02-string-operations/solutions/exercise-02-case-counter",
+	"chapter-02-string-operations/solutions/exercise-03-palindrome-checker",
+	"chapter-02-string-operations/solutions/exercise-04-word-counter",
+	"chapter-02-string-operations/solutions/exercise-05-string-compression",
+	"chapter-02-string-operations/solutions/exercise-06-string-pattern-matching",
 ];
 
 $php_prefix = "https://codingfluidity.test/";
