@@ -1,0 +1,24 @@
+#separator:tab
+#html:true
+"¿Qué es una variable?
+"	Contenedor en memoria que almacena un dato
+"Como declarar constantes en PHP y JavaScript?
+"	"PHP:<br>define(""PI"", 3.141592); // expresiones simples y fuera de clase<br>const PI = 3.141592; // expresiones complejas y constantes de clase<br><br>JavaScript:<br>const PI = 3.141592;"
+"Cadenas multilínea con interpolación de variables en PHP y JavaScript?
+"	"PHP:<br>Sintaxis HEREDOC (HERE DOCument)<br>$name = ""John"";<br>$message = <<<EOM<br>    Hola $name,<br>    Tu solicitud ha sido procesada.<br>EOM;<br><br>JS:<br>Sintaxis backticks<br>let name = ""John"";<br>let text = <br>    Hola ${name},<br>    Tu solicitud ha sido procesada.<br>;"
+"Para qué se usa null en PHP y JavaScript?
+"	PHP: null representa la ausencia de valor definida arbitrariamente<br>JavaScript: null representa la ausencia de valor definida arbitrariamente<br><br>
+"Verificar que un valor es null en PHP y JavaScript?
+"	PHP:<br>is_null($variable);<br><br>JavaScript:<br>let variable === null;
+"Que representa undefined en PHP y JavaScript?
+"	PHP: no existe en PHP<br><br>JavaScript:<br>- una variable declarada, pero no inicializada<br>- propiedad inexistente de un objeto<br>- cuando se trata de imprimir el resultado de una función que no devuelve nada
+"¿Cómo se obtiene el tipo de una variable en PHP y JavaScript?
+"	"PHP:<br>gettype($variable); // Retorna tipo como string ""string""<br><br>Posibles valores de retorno:<br>""boolean""<br>""integer""<br>""double"" (for historical reasons ""double"" is returned in case of a float, and not simply ""float"")<br>""string""<br>""array""<br>""object""<br>""resource""<br>""resource (closed)"" as of PHP 7.2.0, in previous versions ""unknown type""<br>""NULL""<br><br>JavaScript:<br>typeof variable; // Retorna tipo como string<br><br>Undefined   ""undefined""<br>Null        ""object""<br>Boolean     ""boolean""<br>Number      ""number""<br>BigInt      ""bigint""<br>String      ""string""<br>Symbol      ""symbol""<br>Function    ""function""<br>Any other object    ""object"""
+"Funciones de PHP y JavaScript para verificar tipos de datos
+"	"PHP y JS lado a lado:<br><br>is_int($variable);              typeof variable === ""number"" &amp;&amp; Number.isInteger(variable)<br>is_float($variable);            typeof variable === ""number"" &amp;&amp; !Number.isInteger(variable)<br>is_numeric($variable); typeof variable === ""number"" &amp;&amp; !isNaN(variable)<br><br>is_string($variable); typeof variable === ""string""<br>is_bool($variable);             typeof variable === ""boolean""<br>is_array($variable);            Array.isArray(variable)<br><br>is_null($variable);             variable === null<br>is_callable($variable);         typeof variable === ""function"""
+"¿Cómo se realiza la conversión explícita de tipos en PHP y JavaScript?
+"	PHP:<br>(int)$var; intval($var);<br>(float)$var; floatval($var);<br>(string)$var; stringval($var);<br>(bool)$var; boolval($var);<br>(array)$var;<br>(object)$var;<br><br>JavaScript:<br>parseInt(var);<br>parseFloat(var)<br>String(var);<br>Boolean(var);<br>Array.from(var);<br>Object(var);
+"Globales en PHP y JavaScript
+"	"PHP:<br>$variable_global = ""Hola desde el ámbito global"";<br><br>function miFuncion() {<br>    global $variable_global;<br>    echo $variable_global; // Imprime: Hola desde el ámbito global<br>}<br><br>JavaScript:<br>let variable_global = ""Hola desde el ámbito global"";<br><br>function miFuncion() {<br>    console.log(window.variable_global); // Imprime: Hola desde el ámbito global<br>}<br><br>// otro ejemplo<br>let variable_global = ""Hola desde el ámbito global"";<br><br>function miFuncion() {<br>    console.log(this.variable_global); // Imprime: Hola desde el ámbito global<br>}"
+"Coerción (conversión implícita) de tipos en PHP y JavaScript
+"	"PHP:<br>$num = 5 + ""10""; // PHP convertirá ""10"" a entero y resultará en 15<br><br>JavaScript:<br>let num = 5 + ""10""; // JavaScript concatenará a ""510"" por prioridad de concatenación"

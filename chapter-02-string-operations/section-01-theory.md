@@ -63,7 +63,6 @@ substr($string, start, length); // substr string start length
 
 // JavaScript
 str.substr(start, length); // str substr start length
-
     let string = "Hello, world!";
     let substring = string.substr(7, 5); // "world"
     
@@ -73,11 +72,7 @@ str.substr(start, length); // str substr start length
 
 str.substring(start, end); // str substring start end
     let string = "Hello, world!";
-    let substring = string.substring(7, 12); // "world"
-
-    // it can be used to reverse a string:
-    let string = "Hello, world!";
-    let substring = string.substring(12, 7); // "dlrow"
+    let substring = string.substring(7, 12); // "world"    
 ```
 
 #### 4. Search

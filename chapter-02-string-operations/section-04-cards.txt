@@ -1,0 +1,31 @@
+#separator:tab
+#html:true
+"What are the ways to create strings in PHP and JS?
+"	" 1. Single quotes: $str1 = 'Single quotes'<br>2. Double quotes: $str2 = ""Double quotes""<br>3. Heredoc: $str3 = &lt;&lt;&lt;EOL<br><eot<br>&nbsp; &nbsp;Multiple lines<br>EOL;<br>1. Single quotes: let str1 = 'Single quotes'<br>2. Double quotes: let str2 = ""Double quotes""<br>3. Template literals: let str3 = `Template<br>   literals`;</eot<br>"
+"How to get string length in PHP vs JavaScript?
+"	 PHP: strlen($str)<br>JavaScript: str.length
+"How to modify string case in PHP vs JavaScript?
+"	 PHP:<br>strtoupper($str) // To uppercase<br>strtolower($str) // To lowercase<br><br>JavaScript:<br>str.toUpperCase()<br>str.toLowerCase()
+"What are the case modification functions in PHP and JS?
+"	 PHP:<br>ucfirst($str) // Capitalize first letter<br>ucwords($str) // Capitalize words <br><br>JavaScript: no native functions for this
+"How to extract substrings in PHP vs JavaScript using substr?
+"	" PHP: substr($string, start, length)<br>$salute = ""Hello, world!""; //world<br>$extract = substr($salute, 7, 5); // ""world"" <br><br>JavaScript: str.substr(start, length)<br>let salute = ""Hello, world!"";<br>let extract = salute.substr(7, 5); // ""world""<br><br>Alternative to substr in JS:<br>JavaScript: str.substring(start, end) // alternative to substr<br><br>
+
+
+<span style=""white-space: pre-wrap;"">let salute = ""Hello, world!"";
+</span><span style=""white-space: pre-wrap;"">let extract = salute.substring(7, 12); // ""world""</span>"
+"Reverse a string in PHP vs JS
+"	"<br>PHP: strrev($string)<br><br>JavaScript: str.split("""").reverse().join("""")<br>"
+"How to extract the last n characters in PHP vs JavaScript?
+"	 PHP: substr($string, -5) // last 5 characters<br><br>JavaScript: str.substr(-5) // last 5 characters
+"How to search for string position in PHP vs JavaScript? <br>If not found what's returned?
+"	 PHP:<br>strpos($string, search) // First occurrence (false if not found)<br>strrpos($string, search) // Last occurrence<br><br>JavaScript:<br>str.indexOf(search) // First occurrence (-1 if not found)<br>str.lastIndexOf(search) // Last occurrence
+"How to replace strings in PHP vs JavaScript?
+"	 PHP:<br>str_replace(search, replace, string) // all ocurrences<br><br>JavaScript:<br>str.replace(search, replace) // single first replacement<br>str.replaceAll(search, replace) // all occurrences<br>str.replace(/joe/g, replace) // regex for older JS engines<br>
+"How to perform multiple replacements in PHP using arrays?
+"	" $text = ""The quick brown fox"";<br>$search = array(""quick"", ""brown"", ""fox"");<br>$replace = array(""slow"", ""red"", ""cat"");<br>$newText = str_replace($search, $replace, $text);"
+"How to perform multiple replacements in JS using arrays?
+"	" const text = ""The quick brown fox jumps over the lazy dog"";<br><pre>const search = [""quick"", ""brown"", ""fox""];<br>const replace = [""slow"", ""red"", ""cat""];<br><br>let newText = text;<br>for (let i = 0; i &lt; search.length; i++) {<br>    newText = newText.replaceAll(search[i], replace[i]);
+    // or replace for a single ocurrence</pre><pre>}</pre><pre><br></pre><pre>console.log(newText); // Output: The slow red cat jumps over the lazy dog<br></pre>"
+"How to replace all occurrences in older JavaScript engines?
+"	" Using regex with global flag:<br>let text = ""The quick brown fox"";<br>let newText = text.replace(/fox/g, ""cat"");"
